@@ -13,5 +13,10 @@ public class KiranFoods
 		System.out.println("Mushroom");
 		
 	}
+	@Test
+	public void curryPoint()
+	{
+		System.out.println("Guntur Chicken");
+	}
 	
 }

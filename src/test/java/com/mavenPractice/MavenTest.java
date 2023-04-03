@@ -16,4 +16,11 @@ public class MavenTest
 	{
 		Reporter.log("-----Test Case :-2 Executed -----",true);
 	}
+	@Test(groups = "regression")
+	public void testScript3()
+	{
+		Reporter.log("-----Test Case :-3 Executed -----",true);
+	}
+	
+	
 }

@@ -9,6 +9,7 @@ public class CheckPost
 	public void curryPoint()
 	{
 		System.out.println("Guntur Chicken");
+		System.out.println("Biriyani");
 	}
 
 }

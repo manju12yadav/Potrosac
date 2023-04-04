@@ -1,5 +1,6 @@
 package com.mavenPractice;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class CheckPost 
@@ -9,8 +10,7 @@ public class CheckPost
 	public void curryPoint()
 	{
 		System.out.println("Guntur Chicken");
-		System.out.println("New food");
-		System.out.println("Biriyani");
+		Reporter.log("Chicken Biriyani");
 	}
 
 }

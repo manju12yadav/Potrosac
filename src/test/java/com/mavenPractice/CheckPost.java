@@ -10,7 +10,8 @@ public class CheckPost
 	public void curryPoint()
 	{
 		System.out.println("Guntur Chicken");
-		Reporter.log("Chicken Biriyani");
+		Reporter.log("Chicken Biriyani",true);
+		
 	}
 
 }

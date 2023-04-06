@@ -8,10 +8,10 @@ public class ParameterTest
 	public void test()
 	{
 		String Url = System.getProperty("url");
-		String Env = System.getProperty("Env");
+		String Env = System.getProperty("env");
 		String Browser = System.getProperty("browser");
 		String UN = System.getProperty("un");
 		String PW = System.getProperty("pw");
-		System.out.println(Url+"----"+Env+"---"+Browser+"---"+UN+"---"+PW);
+		System.out.println(Url+"---"+Env+"---"+Browser+"---"+UN+"---"+PW);
 	}
 }

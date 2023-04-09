@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class KiranFoodsTest 
 {
-	@Test
+	@Test(groups = "smoke")
 	public void menuList()
 	{
 		
@@ -13,7 +13,7 @@ public class KiranFoodsTest
 		System.out.println("Mushroom");
 		
 	}
-	@Test
+	@Test(groups = "regression")
 	public void curryPoint()
 	{
 		System.out.println("Guntur Chicken");

@@ -25,9 +25,10 @@ public class AutomateMakeMyTrip
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.get("https://www.makemytrip.com/");
-		Actions act = new Actions(driver);
+//		Actions act = new Actions(driver);
 //		act.click().perform();
-		driver.findElement(By.xpath("//a[@id='webklipper-publisher-widget-container-notification-close-div']")).click();
+		driver.switchTo().defaultContent();
+		driver.findElement(By.xpath("//a[@class='close']")).click();
 		WebElement from = driver.findElement(By.xpath("//span[text()='From']"));
 		from.click();
 		
@@ -73,7 +74,7 @@ public class AutomateMakeMyTrip
 		driver.findElement(By.xpath("//span[text()='Return']")).click();
 		driver.findElement(By.xpath("//div[@aria-label='Mon Jul 03 2023']")).click();
 		driver.findElement(By.xpath("//a[text()='Search']")).click();
-		act.click().perform();
+//		act.click().perform();
 
 		List<WebElement> flights = driver.findElements(By.xpath("//span[@class='boldFont blackText']"));
 
